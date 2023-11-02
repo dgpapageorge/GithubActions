@@ -7,7 +7,7 @@ namespace GithubActionsLab
     public class Math
     {
         [Test]
-        public void Add_Valid()
+        public void Add_Valid_Papageorge()
         {
             Assert.AreEqual(3, Program.Add("1", "2"));
             Assert.AreEqual(5, Program.Add("3", "2"));
@@ -15,7 +15,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_Invalid()
+        public void Add_Invalid_Papageorge()
         {
             Assert.Throws<FormatException>(() => Program.Add("1", "a"));
             Assert.Throws<FormatException>(() => Program.Add("a", "1"));
@@ -23,7 +23,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_Null()
+        public void Add_Null_Papageorge()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Add("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Add(null, "1"));
@@ -32,7 +32,7 @@ namespace GithubActionsLab
 
         // Implement 3 tests per operation, following a similar pattern as above
         [Test]
-        public void Subtract_Valid()
+        public void Subtract_Valid_Papageorge()
         {
             Assert.AreEqual(2, Program.Subtract("4", "2"));
             Assert.AreEqual(1, Program.Subtract("3", "2"));
@@ -40,7 +40,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Invalid()
+        public void Subtract_Invalid_Papageorge()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("1", "a"));
             Assert.Throws<FormatException>(() => Program.Subtract("a", "1"));
@@ -48,14 +48,14 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Null()
+        public void Subtract_Null_Papageorge()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Subtract("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "1"));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, null));
         }
         [Test]
-        public void Multiply_Valid()
+        public void Multiply_Valid_Papageorge()
         {
             Assert.AreEqual(2, Program.Multiply("1", "2"));
             Assert.AreEqual(6, Program.Multiply("3", "2"));
@@ -63,7 +63,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Invalid()
+        public void Multiply_Invalid_Papageorge()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
             Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
@@ -71,14 +71,14 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Null()
+        public void Multiply_Null_Papageorge()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, null));
         }
         [Test]
-        public void Divide_Valid()
+        public void Divide_Valid_Papageorge()
         {
             Assert.AreEqual(2, Program.Divide("4", "2"));
             Assert.AreEqual(3, Program.Divide("6", "2"));
@@ -86,7 +86,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Invalid()
+        public void Divide_Invalid_Papageorge()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -94,7 +94,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Null()
+        public void Divide_Null_Papageorge()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
